@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="my-4 text-center">World</h1>
+    <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Buscar país" id="search-input">
+    <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="search-button">Buscar</button>
+    </div>
+    </div>
+    <nav class="nav nav-pills flex-row mb-4">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#" id="países">Países</a>
+    </nav>
+    <div class="info-bar" id="info-bar">
+    <ul class="list-group">
+        <li class="list-group-item"><strong>Continente:</strong> <span id="continent"></span></li>
+        <li class="list-group-item"><strong>País:</strong> <span id="country"></span></li>
+        <li class="list-group-item"><strong>Región:</strong> <span id="region"></span></li>
+        <li class="list-group-item"><strong>Clima:</strong> <span id="weather"></span></li>
+        <li class="list-group-item"><strong>Fecha de Hoy:</strong> <span id="date"></span></li>
+    </ul>
+    </div>
+    <div id="content">
+    </div>
+    <div id="sidebar"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
